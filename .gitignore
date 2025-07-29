@@ -171,3 +171,4 @@ build/Release/
 # System
 .DS_Store
 Thumbs.db
+SCRM/package-lock.json
