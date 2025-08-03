@@ -1,4 +1,6 @@
-
+import { Address, Opportunity } from './Activity';
+import { Contact } from './Contact';
+import { IndustryType } from '../enums/IndustryType';
 
 export interface Company {
   id: string;
