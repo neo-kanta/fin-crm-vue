@@ -3,6 +3,8 @@ export interface Activity {
   type: ActivityType;
   subject: string;
   description: string;
+  status: string;
+  date: string;
   contactId?: string;
   companyId?: string;
   scheduledDate: Date;
@@ -11,6 +13,7 @@ export interface Activity {
   nextSteps?: string;
   createdBy: string;
   createdAt: Date;
+  assignedTo: string;
 }
 
 export interface Opportunity {
