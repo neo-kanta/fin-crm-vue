@@ -80,15 +80,25 @@ export const OpportunityStageLabel: Record<OpportunityStage, string> = {
  * Postal address. Embed inside Company/Contact as needed.
  */
 export interface Address {
-  /** Street line incl. number; add line breaks if needed. */
+  /** 
+   * Street line incl. number; add line breaks if needed. 
+   */
   street: string;
-  /** City / district. */
+  /** 
+   * City / district. 
+   */
   city: string;
-  /** Province / state (optional). */
+  /** 
+   * Province / state (optional). 
+   */
   state?: string;
-  /** Country name or ISO-3166 code. */
+  /** 
+   * Country name or ISO-3166 code. 
+   */
   country: string;
-  /** Postal / ZIP code. */
+  /** 
+   * Postal / ZIP code. 
+   */
   postalCode: string;
 }
 
@@ -132,7 +142,7 @@ export interface Address {
 export interface Activity {
   /**
    * Unique activity ID
-   * TODO: change to UUIDv4 recommended).
+   * TODO: change to UUIDv4 if necessary.
    */
   id: ID;
 
