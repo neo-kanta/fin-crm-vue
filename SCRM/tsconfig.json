@@ -1,6 +1,9 @@
 {
-  "extends": "./tsconfig.json",
   "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
@@ -9,7 +12,12 @@
       "@models/*": ["src/types/models/*"],
       "@enums/*": ["src/types/enums/*"]
     },
-    "moduleResolution": "Bundler"
+    "types": ["vite/client"],
+    "jsx": "preserve",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "useDefineForClassFields": true,
+    "skipLibCheck": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"]
 }

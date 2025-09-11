@@ -16,6 +16,7 @@ export default defineConfig({
       ),
       "@models": fileURLToPath(new URL("./src/types/models", import.meta.url)),
       "@enums": fileURLToPath(new URL("./src/types/enums", import.meta.url)),
+      "@views": fileURLToPath(new URL("./src/views", import.meta.url)),
     },
   },
 });
